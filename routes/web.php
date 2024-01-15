@@ -22,4 +22,4 @@ Route::get('/', function () {
 
 Route::get('user', [ContactController::class,'show']);
 
-Route::post('/addavis', [ContactController::class,'addavis']);
+Route::post('addavis', [ContactController::class,'addavis']);
