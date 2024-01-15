@@ -19,13 +19,13 @@
                 </div>
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
-                        <h2 class="h2modele">Modèle 1 :</h2>
+                        <h2 class="h2modele">Modèle Mobile App 1 :</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
-                        <p><strong>Langages :</strong> Vue.js - Python (Django) - PostgreSQL - TypeScript</p>
+                        <p><strong>Langages :</strong> Swift</p>
                     </div>
                     <div class="cont101">                
                         <div class="supcont">
-                            <p><strong>Prix : 2500 Dh</strong></p>
+                            <p><strong>Prix : 3000 Dh</strong></p>
                             <div class="supcont2"><button onclick="addPanier(1)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
                         </div>
                     </div>
@@ -37,9 +37,9 @@
                 
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
-                        <h2 class="h2modele">Modèle 2 :</h2>
+                        <h2 class="h2modele">Modèle Mobile App 2 :</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
-                        <p><strong>Langages :</strong> Angular - Java - MySQL - Kotlin</p>
+                        <p><strong>Langages :</strong> Kotlin</p>
                     </div>
                     <div class="cont101">                
                         <div class="supcont">
@@ -59,9 +59,9 @@
                 </div>
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
-                        <h2 class="h2modele">Modèle 3 :</h2>
+                        <h2 class="h2modele">Modèle Mobile App 3 :</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
-                        <p><strong>Langages :</strong> React - Express.js - MongoDB - Js</p>
+                        <p><strong>Langages :</strong> React Native</p>
                     </div>
                     <div class="cont101">                
                         <div class="supcont">
@@ -75,9 +75,9 @@
                 
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
-                        <h2 class="h2modele">Modèle 4 :</h2>
+                        <h2 class="h2modele">Modèle Mobile App 4 :</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
-                        <p><strong>Langages :</strong> Angular - Express.js - MongoDB - Js</p>
+                        <p><strong>Langages :</strong> Flutter</p>
                     </div>
                     <div class="cont101">                
                         <div class="supcont">
@@ -94,7 +94,7 @@
         </div>
     </div>
 </body>
-<script src="{{ asset('js/apppanier.js') }}">
+<script src="{{ asset('js/appdev.js') }}">
 
 </script>
 </html>

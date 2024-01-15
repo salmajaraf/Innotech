@@ -143,12 +143,12 @@
                 </div>
             </div>
             <div class="formu">
-                <form id="form" method="post" (ngSubmit)="addavis()">
+                <form id="form" method="POST"  action="{{route('addavis')}}">
                     <p>Posez vos questions ici</p>
-                    <input type="email" placeholder="Adresse Email" name="email" required [(ngModel)]="contactObj.email" /><br/>
-                    <input type="text" placeholder="Nom" name="nom" required [(ngModel)]="contactObj.nom"/><br/>
-                    <input type="text" placeholder="Prénom" name="prenom" required [(ngModel)]="contactObj.prenom"/><br/>
-                    <textarea placeholder="Message" name="message" required [(ngModel)]="contactObj.message"></textarea><br/>
+                    <input type="email" placeholder="Adresse Email" name="email" required/><br/>
+                    <input type="text" placeholder="Nom" name="nom" required/><br/>
+                    <input type="text" placeholder="Prénom" name="prenom" required /><br/>
+                    <textarea placeholder="Message" name="message" required></textarea><br/>
                     <input type="submit" value="Envoyer"/>
                 </form>
             </div>

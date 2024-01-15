@@ -14,6 +14,6 @@ class Contact extends Model
 
    public function addContact($data){
     $result = DB::table('avis')->insert($data);
-    dd($result);
+    return $result;
    }
 }

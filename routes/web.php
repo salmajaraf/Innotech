@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Home');
-});
+})->name("homepage");
 
 Route::get('web', function () {
     return view('Webdev');
@@ -28,4 +28,4 @@ Route::get('app', function () {
 
 Route::get('user', [ContactController::class,'show']);
 
-Route::post('addavis', [ContactController::class,'addavis']);
+Route::post('addavis', [ContactController::class,'addavis'])->name('addavis');
