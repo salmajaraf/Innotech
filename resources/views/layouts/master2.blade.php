@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collab.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('css/general.css') }}">
     <link rel="stylesheet" href="{{ asset('css/service.css') }}">
+=======
+    <link rel="stylesheet" href="{{ asset('css/chiffre.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/general.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+
+
+
+
+>>>>>>> ba65cfc998600189074c5afadf4ceb4c0e6c89f6
 </head>
 <body>
     <div class="container">
@@ -38,6 +48,7 @@
             <p>InnoTech, c'est l'innovation numérique incarnée. Notre expertise allie la pointe technologique à une créativité inépuisable, façonnant des expériences exceptionnelles. De la conception web aux stratégies marketing, chaque initiative témoigne de notre engagement à redéfinir l'excellence numérique. Optez pour InnoTech : bien plus qu'une agence, un partenaire résolu à faire de chaque projet une réussite mémorable.</p>
         </div>
     </div>
+<<<<<<< HEAD
     <div class="pack">
       <h2>Nos Services</h2>
         <p>Créez l'extraordinaire avec Innotech : web, apps, sécurité - l'innovation à portée de clic</p>
@@ -65,6 +76,52 @@
             </a>
         </div>
     </div>
+=======
+
+    <div class="chi">
+        <h2>Notre Réussite en Chiffres</h2>
+        <div class="cont">
+            <div class="chi1 border">
+                <div class="image">
+                    <h1>20</h1>
+                    <img src="{{ asset('assets/images/trophe.png') }}" alt="logorenocraft.png">
+                </div>
+                <div class="para">
+                    <p>RÉCOMPENSES</p>
+                </div>
+            </div>
+            <div class="chi1 border">
+                <div class="image">
+                    <h1>721</h1>
+                    <img src="{{ asset('assets/images/projet.png') }}" alt="logorenocraft.png">
+                </div>
+                <div class="para">
+                    <p>PROJETS</p>
+                </div>
+            </div>
+            <div class="chi1 border">
+                <div class="image">
+                    <h1>588</h1>
+                    <img src="{{ asset('assets/images/client.png') }}" alt="logorenocraft.png">
+                </div>
+                <div class="para">
+                    <p>CLIENTS SATISFAITS</p>
+                </div>
+            </div>
+            <div class="chi1">
+                <div class="image">
+                    <h1>32</h1>
+                    <img src="{{ asset('assets/images/membre.png') }}" alt="logorenocraft.png">
+                </div>
+                <div class="para">
+                    <p>MEMBRES</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+>>>>>>> ba65cfc998600189074c5afadf4ceb4c0e6c89f6
     <div class="colabsec">
         <h2>Nos Collaborateurs</h2>
         <div class="cont1">
@@ -90,6 +147,57 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="ticlair chlen">Contactez-Nous</h1>
+        <div class="information">
+            <div class="imgcontact">
+                <p>Coordonnées de contact</p>
+                <div class="ye">
+                <div class="coord1">
+                    <div class="icocoord">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="coordinfo">
+                        <h3>Notre bureau</h3>
+                        <p>123 rue, Rabat, MAROC</p>
+                    </div>
+                </div>
+                <div class="coord1">
+                    <div class="icocoord">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="coordinfo">
+                        <h3>Appelez-nous</h3>
+                        <p>+212 5 37 15 20 85</p>
+                    </div>
+                </div>
+                <div class="coord1">
+                    <div class="icocoord">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="coordinfo">
+                        <h3>Envoyez-nous un courriel</h3>
+                        <p style="text-align: start">InnoTech&#64;gmail.com</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="formu">
+                <form id="form" method="post" (ngSubmit)="addavis()">
+                    <p>Posez vos questions ici</p>
+                    <input type="email" placeholder="Adresse Email" name="email" required [(ngModel)]="contactObj.email" /><br/>
+                    <input type="text" placeholder="Nom" name="nom" required [(ngModel)]="contactObj.nom"/><br/>
+                    <input type="text" placeholder="Prénom" name="prenom" required [(ngModel)]="contactObj.prenom"/><br/>
+                    <textarea placeholder="Message" name="message" required [(ngModel)]="contactObj.message"></textarea><br/>
+                    <input type="submit" value="Envoyer"/>
+                </form>
+            </div>
+        </div>
+        <div class="retour">
+            <div class="mon"><a href="#" class="fleche"><i class="fa-solid fa-arrow-up"></i></a></div>
         </div>
     </div>
 
