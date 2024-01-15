@@ -1,0 +1,38 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 16, 23,0.75),rgba(1, 16, 23,0.75)),url(../../../assets/images/homebanner1.jpg);
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hometitre {
+    font-size: 115px;
+    font-family: 'Rund Display',sans-serif;
+    color: #ffffff ;
+}
+
+.banner a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Rund Display', sans-serif;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    color: #011017;
+    border-radius: 30px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner a:hover {
+    scale: 1.1;
+}

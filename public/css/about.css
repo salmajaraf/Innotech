@@ -1,0 +1,40 @@
+
+.part2{
+    background-color: rgb(231, 231, 231);
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 500px;
+    height:auto;
+
+}
+
+
+.description{
+    width:38%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -180px;
+
+}
+
+
+.description h2{
+    color: #011017;
+    font-size: 39px;
+    padding-bottom: 40px;
+    font-family: "Rund Display", sans-serif;
+}
+
+.description p {
+    font-size: 17px;
+    line-height:25px;
+    text-align: justify;
+    font-family:'Rund Display' ,sans-serif;
+    font-weight: 500;
+}
