@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master3')
 @section('body')
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,6 @@
 <body>
     <div  class="banner" id="home">
         <h1 class="hometitre">InnoTech</h1>
-        <a href="#">Créer Un Compte</a>
     </div>
     <div class='part2' id='about'>
         <div class="logo">

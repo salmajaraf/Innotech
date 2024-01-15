@@ -1,0 +1,84 @@
+.pack {
+    background-color: rgb(231, 231, 231);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.pack .h2b{
+    color: #011017;
+    font-size: 39px;
+    padding-bottom: 40px;
+    font-family: "Rund Display", sans-serif;
+
+    padding-top: 120px;
+}
+
+.pack p{
+    color: #011017;
+    font-size: 18px;
+    font-family: "Rund Display", sans-serif;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pack1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.pack1 .imgsecurite img{
+    width: 650px;
+    height: auto;
+}
+
+.contactsecu {
+    width: 600px;
+    margin-right: 150px;
+}
+
+.titti h2{
+    color: #011017;
+    font-size: 27px;
+    font-family: "Rund Display", sans-serif;
+}
+.supcontsecu h3{
+    color: #011017;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-family: "Rund Display", sans-serif;
+}
+
+.supcontsecu p{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Rund Display", sans-serif;
+}
+
+.supcontsecu {
+    padding-left: 35px;
+    margin-top: 20px;
+}
+
+.supcontsecu i{
+    color: #011017;
+    
+}
+

@@ -20,5 +20,8 @@ class ContactController extends Controller
 
         $result = $contactModel->addContact($request->all());
         //return "hi jjjjj";
+        if($result){
+            return redirect()->route('homepage');
+        }
     }
 }
