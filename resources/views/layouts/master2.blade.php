@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collab.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 
 
 </head>
@@ -27,13 +28,22 @@
     <main>
         @yield('body')
     </main>
+    <div class='part2' id='about'>
+        <div class="logo">
+            <img src="{{ asset('assets/images/coullogoinnotech.png') }}" alt="logorenocraft.png">
+        </div>
+        <div class="description">
+            <h2>À Propos</h2>
+            <p>InnoTech, c'est l'innovation numérique incarnée. Notre expertise allie la pointe technologique à une créativité inépuisable, façonnant des expériences exceptionnelles. De la conception web aux stratégies marketing, chaque initiative témoigne de notre engagement à redéfinir l'excellence numérique. Optez pour InnoTech : bien plus qu'une agence, un partenaire résolu à faire de chaque projet une réussite mémorable.</p>
+        </div>
+    </div>
     
     <div class="colabsec">
         <h2>Nos Collaborateurs</h2>
         <div class="cont1">
             <div class="colab1">
                 <div class="image1">
-                    <img src="{{ asset('assets/images/ibm.png') }}" alt="logorenocraft.png">
+                    <img src="{{ asset('assets/images/cisco.png') }}" alt="logorenocraft.png">
                 </div>
             </div>
             <div class="colab1">
