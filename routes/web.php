@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SocieteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,11 +25,17 @@ Route::get('/home', function () {
 
 Route::get('web', function () {
     return view('Webdev');
-})->name("web");;
+})->name("web");
 
 Route::get('app', function () {
     return view('Appdev');
-})->name("app");;
+})->name("app");
+
+Route::get('panier', function () {
+    return view('Panier');
+})->name("panier");
+
+Route::get('securite', [SocieteController::class, 'getSociete'])->name("securite");
 
 Route::get('user', [ContactController::class,'show']);
 
