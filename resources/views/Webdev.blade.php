@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master3')
 @section('body')
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master3')
 @section('body')
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@
                     <div class="cont101">                
                         <div class="supcont">
                             <p><strong>Prix : 3000 Dh</strong></p>
-                            <div class="supcont2"><button onclick="addPanier(1)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
+                            <div class="supcont2"><button onclick="addPanier(5)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="cont101">                
                         <div class="supcont">
                             <p><strong>Prix : 3500 Dh</strong></p>
-                            <div class="supcont2"><button onclick="addPanier(2)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
+                            <div class="supcont2"><button onclick="addPanier(6)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="cont101">                
                         <div class="supcont">
                             <p><strong>Prix : 4000 Dh</strong></p>
-                            <div class="supcont2"><button onclick="addPanier(3)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
+                            <div class="supcont2"><button onclick="addPanier(7)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                     <div class="cont101">                
                         <div class="supcont">
                             <p><strong>Prix : 4500 Dh</strong></p>
-                            <div class="supcont2"><button onclick="addPanier(4)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
+                            <div class="supcont2"><button onclick="addPanier(8)">Ajouter Au Panier &nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></button></div>
                         </div>
                     </div>
                 </div>

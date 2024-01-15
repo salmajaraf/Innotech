@@ -18,13 +18,17 @@ Route::get('/', function () {
     return view('Home');
 })->name("homepage");
 
+Route::get('/home', function () {
+    return view('Home2');
+})->name("homepage2");
+
 Route::get('web', function () {
     return view('Webdev');
-});
+})->name("web");;
 
 Route::get('app', function () {
     return view('Appdev');
-});
+})->name("app");;
 
 Route::get('user', [ContactController::class,'show']);
 
