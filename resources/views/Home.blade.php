@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="{{ asset('css/banner.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/general.css') }}">
+
 
 </head>
 <body>
