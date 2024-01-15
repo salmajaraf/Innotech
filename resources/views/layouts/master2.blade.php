@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collab.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('css/general.css') }}">
     <link rel="stylesheet" href="{{ asset('css/service.css') }}">
-=======
     <link rel="stylesheet" href="{{ asset('css/chiffre.css') }}">
     <link rel="stylesheet" href="{{ asset('css/general.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 
-
-
-
->>>>>>> ba65cfc998600189074c5afadf4ceb4c0e6c89f6
 </head>
 <body>
     <div class="container">
@@ -48,7 +42,7 @@
             <p>InnoTech, c'est l'innovation numérique incarnée. Notre expertise allie la pointe technologique à une créativité inépuisable, façonnant des expériences exceptionnelles. De la conception web aux stratégies marketing, chaque initiative témoigne de notre engagement à redéfinir l'excellence numérique. Optez pour InnoTech : bien plus qu'une agence, un partenaire résolu à faire de chaque projet une réussite mémorable.</p>
         </div>
     </div>
-<<<<<<< HEAD
+
     <div class="pack">
       <h2>Nos Services</h2>
         <p>Créez l'extraordinaire avec Innotech : web, apps, sécurité - l'innovation à portée de clic</p>
@@ -76,7 +70,7 @@
             </a>
         </div>
     </div>
-=======
+
 
     <div class="chi">
         <h2>Notre Réussite en Chiffres</h2>
@@ -121,7 +115,7 @@
         </div>
     </div>
     
->>>>>>> ba65cfc998600189074c5afadf4ceb4c0e6c89f6
+
     <div class="colabsec">
         <h2>Nos Collaborateurs</h2>
         <div class="cont1">

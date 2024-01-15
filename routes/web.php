@@ -18,11 +18,11 @@ Route::get('/', function () {
     return view('Home');
 });
 
-Route::get('webdev', function () {
+Route::get('web', function () {
     return view('Webdev');
 });
 
-Route::get('appdev', function () {
+Route::get('app', function () {
     return view('Appdev');
 });
 
