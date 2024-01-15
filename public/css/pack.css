@@ -1,0 +1,120 @@
+.pack {
+    background-color: rgb(231, 231, 231);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.pack .h2b{
+    color: #201F25;
+    font-size: 39px;
+    padding-bottom: 40px;
+    font-family: "Rund Display", sans-serif;
+
+    padding-top: 120px;
+}
+
+.pack p{
+    color: #201F25;
+    font-size: 18px;
+    font-family: "Rund Display", sans-serif;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pack1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.souspack16 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    /*background-color: white;*/
+    /*border-radius: 15px;*/
+}
+
+.imgpack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.imgpack img{
+    width: 550px;
+    height: auto;
+    
+}
+/*
+.imgpack .leftborder {
+    border-radius: 15px 0 0 15px;
+}
+
+.imgpack .rightborder {
+    border-radius: 0px 15px 15px 0;
+}
+
+*/
+.souspack16 .description25 {
+    width: 750px !important;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.cont100 .h2modele {
+    color: #201F25;
+    font-size: 30px;
+    font-family: "Rund Display", sans-serif;
+
+    
+}
+
+.cont100 p {
+    font-size: 15px;
+    padding-right: 35px;
+    text-align: justify;
+}
+
+.cont101 .supcont {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.cont101 .supcont p {
+    margin-bottom: 0;
+}
+
+.supcont2 button{
+    background-color: #011017;
+    color: white;
+}
+
+.supcont2 button i{
+    color: white;
+}

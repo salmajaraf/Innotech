@@ -1,0 +1,192 @@
+.pack {
+    background-color: rgb(231, 231, 231);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pack h2{
+    color: #011017;
+    font-size: 39px;
+    padding-bottom: 40px;
+    font-family: "Rund Display", sans-serif;
+
+    padding-top: 20px;
+}
+
+.pack p{
+    color: #011017;
+    font-size: 18px;
+    font-family: "Rund Display", sans-serif;
+    margin-bottom: 25px;
+}
+
+.pack .pack1 .imgpack,.pack .pack2 .imgpack,.pack .pack3 .imgpack {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.pack1 .souspack,.pack3 .souspack{
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+.pack2 .souspack{
+    width: 600px;
+    height: auto;
+    position: relative;
+}
+
+.pack1 ,.pack2,.pack3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: 35px 0;
+}
+
+
+
+.element-superpose1 {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background-color: rgba(255,255,255,0.5);
+    height: 40px;
+}
+
+.element-superpose1 p {
+    font-size: 17px;
+    font-family: "Rund Display", sans-serif;
+    color: #011017;
+    font-weight: 500;
+
+}
+
+.element-superpose2 {
+    position: absolute;
+    z-index: 2;
+    bottom: 2px;
+    left: 0;
+
+}
+
+.supcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+}
+.pack2 .supcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 600px;
+}
+
+.supcont1 i {
+    scale: 1.2;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.supcont2 button{
+
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: "Rund Display", sans-serif;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.supcont2 button i {
+    scale: 1.2;
+    color: black;
+}
+/*services*/
+
+.slider {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 70px;
+}
+
+.slider .slide1 img, .slider .slide3 img{
+    height: 350px;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.slider .slide1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.slider .slide1 p{
+    margin-top: 15px;
+}
+
+.slider .slide2 img{
+    height: 450px;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.slider .slide2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.slider .slide2 p{
+    margin-top: 15px;
+}
+
+
+.slider .slide3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.slider .slide3 p{
+    margin-top: 15px;
+}
+
+
+
+

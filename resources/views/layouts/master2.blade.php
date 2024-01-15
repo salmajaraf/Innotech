@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collab.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-
-
+    <link rel="stylesheet" href="{{ asset('css/general.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/service.css') }}">
 </head>
 <body>
     <div class="container">
@@ -38,7 +38,33 @@
             <p>InnoTech, c'est l'innovation numérique incarnée. Notre expertise allie la pointe technologique à une créativité inépuisable, façonnant des expériences exceptionnelles. De la conception web aux stratégies marketing, chaque initiative témoigne de notre engagement à redéfinir l'excellence numérique. Optez pour InnoTech : bien plus qu'une agence, un partenaire résolu à faire de chaque projet une réussite mémorable.</p>
         </div>
     </div>
-    
+    <div class="pack">
+      <h2>Nos Services</h2>
+        <p>Créez l'extraordinaire avec Innotech : web, apps, sécurité - l'innovation à portée de clic</p>
+        <div class="slider">
+            <a href="#" style="text-decoration: none;">
+            <div class="slide1">
+            <div>
+                <img src="{{ asset('assets/images/deweb.jpg') }}"></div>
+                <div><p style="font-family: Rund Display;">Dev Web &nbsp;<i class="fa-solid fa-arrow-right"></i></p></div>
+            </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+            <div class="slide2">
+                
+                <img src="{{ asset('assets/images/securite.jpg') }}">
+                <p style="font-family: Rund Display;">CyberSecurity &nbsp;<i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+            <div class="slide3">
+                
+                <img src="{{ asset('assets/images/devapp.jpg') }}">
+                <p style="font-family: Rund Display;">Dev Mobile &nbsp;<i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            </a>
+        </div>
+    </div>
     <div class="colabsec">
         <h2>Nos Collaborateurs</h2>
         <div class="cont1">

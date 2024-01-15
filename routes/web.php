@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('Home');
 });
 
-//Route::post('addavis',[ContactController])
+Route::get('webdev', function () {
+    return view('Webdev');
+});
+
+Route::get('appdev', function () {
+    return view('Appdev');
+});
 
 Route::get('user', [ContactController::class,'show']);
 
