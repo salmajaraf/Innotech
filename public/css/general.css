@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Couleur Principale : #011017 */
+/* Couleur Secondaire : rgb(231, 231, 231) */
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+/*Scroll Bare*/
+
+body::-webkit-scrollbar {
+    width: 12px;
+
+}
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-track:hover {
+    background: white;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: #011017;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #011017;
+}
+

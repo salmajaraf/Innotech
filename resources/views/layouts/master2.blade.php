@@ -27,7 +27,7 @@
                 <li><a class="link" href="#home">Accueil</a></li>
                 <li><a class="link" href="#about">À Propos</a></li>
                 <li><a class="link" href="#contact">Nous Contacter</a></li>
-                <li><a class="link btn" href="#">Se Connecter</a></li>
+                <li><a class="link btn" href="/login">Se Connecter</a></li>
             </ul>
         </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="cont1">
             <div class="colab1">
                 <div class="image1">
-                    <img src="{{ asset('assets/images/cisco.png') }}" alt="logorenocraft.png">
+                    <img src="{{ asset('assets/images/ibm.png') }}" alt="logorenocraft.png">
                 </div>
             </div>
             <div class="colab1">
