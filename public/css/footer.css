@@ -1,0 +1,20 @@
+.footer {
+    background-color: #011017;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer p {
+    font-family: "Rund Display", sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+

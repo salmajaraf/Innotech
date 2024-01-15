@@ -1,0 +1,54 @@
+.colabsec {
+    background-color: #011017;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colabsec h2{
+    color: rgb(231, 231, 231);
+    font-size: 39px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    font-family: "Rund Display", sans-serif;
+    text-align: center;
+}
+
+
+.cont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    width: 1100px;
+}
+
+.cont1 .colab1 {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.colab1 .image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.colab1 .image img {
+    height: 100px;
+    width: auto;
+}
+
+.colab1 .image1 img {
+    height:70px;
+    width: auto;
+}
