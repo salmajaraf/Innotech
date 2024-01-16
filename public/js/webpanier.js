@@ -18,10 +18,10 @@ let panier = [];
     const addPanier = (nbpack)=>{
         let pack;
         let packs = [
-            {"id": 1, "nom": "Modèle 1", "lien": "assets/images/temp1.jpg","prix": 2500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio."},
-            {"id": 2, "nom": "Modèle 2", "lien": "assets/images/temp2.jpg","prix": 3500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio."},
-            {"id": 3, "nom": "Modèle 3", "lien": "assets/images/temp3.jpg","prix": 4000,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio."},
-            {"id": 4, "nom": "Modèle 4", "lien": "assets/images/temp4.jpg","prix": 4500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio."}
+            {"id": 1, "nom": "Modèle 1", "lien": "assets/images/temp1.jpg","prix": 2500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo."},
+            {"id": 2, "nom": "Modèle 2", "lien": "assets/images/temp2.jpg","prix": 3500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo."},
+            {"id": 3, "nom": "Modèle 3", "lien": "assets/images/temp3.jpg","prix": 4000,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo."},
+            {"id": 4, "nom": "Modèle 4", "lien": "assets/images/temp4.jpg","prix": 4500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo."}
         ];
         let valid = check(nbpack);
         if(valid){

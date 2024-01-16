@@ -1,5 +1,5 @@
 .cartsec{
-    background-color: #E3E3E3;
+    background-color: rgb(231, 231, 231);
     height: auto;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .cartsec h2{
-    color: #201F25;
+    color: #011017;
     font-size: 39px;
     padding-bottom: 40px;
     font-family: "Rund Display", sans-serif;
@@ -18,7 +18,7 @@
 }
 
 .pmesg {
-    color: #201F25;
+    color: #011017;
     text-align: center;
     font-size: 22px;
     font-family: "Rund Display", sans-serif;
@@ -49,7 +49,7 @@
 }
 
 .contcartpack h4 {
-    color: #201F25;
+    color: #011017;
     font-size: 15px;
     font-family: "Rund Display", sans-serif;
     margin-bottom: 15px;
@@ -61,7 +61,7 @@
 }
 
 .contcartpack p {
-    color: #201F25;
+    color: #011017;
     font-size: 15px;
     font-family: "Rund Display", sans-serif;
     font-weight: 300;
@@ -79,13 +79,13 @@
     margin-left: 30px;
 }
 .pricedelete h4 {
-    color: #201F25;
+    color: #011017;
     font-size: 15px;
     font-family: "Rund Display", sans-serif;
 }
 
 .pricedelete i{
-    color: #201F25;
+    color: #011017;
     scale: 1.3;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@
 }
 
 .btnclass button {
-    background-color: #201F25;
+    background-color: #011017;
     border: none;
     border-radius: 15px;
     padding: 8px 15px;
@@ -129,7 +129,7 @@
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
-    background-color: #201F25;
+    background-color: #011017;
     border-radius: 15px;
     height: 550px;
     width: 600px;

@@ -1,12 +1,10 @@
 <?php
 
-<<<<<<< HEAD
+use App\Http\Controllers\CommandeController;
 use App\Http\Controllers\ProfileController;
-=======
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SocieteController;
->>>>>>> a9a5f47ef806ae522275a35eb05667ef4c929ac5
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,18 +17,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-<<<<<<< HEAD
-});
-Route::get('/signin', function () {
-    return view('/auth/login');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-=======
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
+
+
+
+
+Route::get('/', function () {
+    return view('Home');
 })->name("homepage");
 
 Route::get('/home', function () {
@@ -50,16 +54,10 @@ Route::get('panier', function () {
 })->name("panier");
 
 Route::get('securite', [SocieteController::class, 'getSociete'])->name("securite");
->>>>>>> a9a5f47ef806ae522275a35eb05667ef4c929ac5
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+Route::get('user', [ContactController::class,'show']);
 
-<<<<<<< HEAD
-require __DIR__.'/auth.php';
-=======
 Route::post('addavis', [ContactController::class,'addavis'])->name('addavis');
->>>>>>> a9a5f47ef806ae522275a35eb05667ef4c929ac5
+
+
+Route::post('addcommande', [CommandeController::class, 'insertcommande'])->name('addcommande');

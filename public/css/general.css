@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-/* You can add global styles to this file, and also import other style files */
 
-=======
->>>>>>> a9a5f47ef806ae522275a35eb05667ef4c929ac5
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Couleur Principale : #011017 */
 /* Couleur Secondaire : rgb(231, 231, 231) */
@@ -44,7 +41,3 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: #011017;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a9a5f47ef806ae522275a35eb05667ef4c929ac5
