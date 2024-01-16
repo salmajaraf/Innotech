@@ -34,8 +34,8 @@
             </div>
 
             <div class="flex items-center justify-between mt-4" style="margin-top:25px;">
-                <div class="btn-signin" th:href="@{/signup}">
-                    <a th:href="@{/signup}">
+                <div class="btn-signin">
+                    <a href="{{route('register')}}">
                         S'inscrire
                     </a>
                 </div>

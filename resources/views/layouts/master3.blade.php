@@ -23,26 +23,26 @@
   </div>
   <div class="links">
     <ul>
-      <li><a class="link" href="">Accueil</a></li>
-      <li><a class="link" href="">Web App</a></li>
-      <li><a class="link" href="">Security</a></li>
-      <li><a class="link" href="">Mobile App</a></li>
-      <li><a class="link" href="">Postuler</a></li>
-      <li><a class="link" href="">
+      <li><a class="link" href="{{route('Home2')}}">Accueil</a></li>
+      <li><a class="link" href="{{route('Webdev')}}">Web App</a></li>
+      <li><a class="link" href="{{route('Securite')}}">Security</a></li>
+      <li><a class="link" href="{{route('Appdev')}}">Mobile App</a></li>
+      <li><a class="link" href="{{route('Home2')}}">Postuler</a></li>
+      <li><a class="link" href="{{route('panier')}}">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
         </svg></a>
       </li>
-      <li><a class="link" href="">
+      <li><a class="link" href="{{route('Home2')}}">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
           <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
         </svg></a>
       </li>
-      <li><a class="link" href="">
+      <li><form method="post" action="{{route('logout')}}"><button class="link" style="background-color: transparent; border:none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
           <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-        </svg></a>
+        </svg></button></form>
       </li>
     </ul>
   </div>
