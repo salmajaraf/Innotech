@@ -41,9 +41,7 @@ require __DIR__.'/auth.php';
 Route::post('addavis', [ContactController::class,'addavis'])->name('addavis');
 
 
-Route::get('panier', function () {
-    return view('Panier');
-})->middleware(['auth', 'verified'])->name("panier");
+Route::get('panier', [CommandeController::class, 'getinfouser'])->middleware(['auth', 'verified'])->name("panier");
 
 
 Route::post('addcommande', [CommandeController::class, 'insertcommande'])->name('addcommande');

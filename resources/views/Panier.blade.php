@@ -28,10 +28,10 @@
                 <form method="POST" action="{{route('addcommande')}}">
                     @csrf
                     <div>
-                    <label for="tel">Numéro de Téléphone : </label>
+                    <label for="email">Email : </label>
                     <br>
                         <input type="hidden" name="templateIds" id="idsInput">
-                    <input type="text" required class="inputlong" id="tel" name="tel" disabled value="0611326166"></div>
+                    <input type="text" required class="inputlong" id="email" name="email" disabled value="{{ $userinfo->email }}"></div>
                     <div class="groupdeinput">
                         <div class="inputgroup1">
                         <label for="date">Date :</label><br>

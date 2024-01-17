@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Commande;
 use App\Models\Templates;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommandeController extends Controller
 {
     public function insertCommande(Request $request)
     {
-        $iduser = 5;
+        $iduser = User::where('email', Auth::user()->email)->value('id');
+        //dd($iduser);
         $commande = Commande::create([
             'iduser' => $iduser,
             'date_rendezvous' => $request->input('dateCommande'),
@@ -29,5 +32,13 @@ class CommandeController extends Controller
         //$commande->templates()->syncWithoutDetaching($templates);
 
         return redirect()->route('panier');
+    }
+
+    public function getinfouser(Request $request)
+    {
+        return view('panier', [
+            'userinfo' => $request->user(),
+        ]);
+
     }
 }

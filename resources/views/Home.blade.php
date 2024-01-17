@@ -28,21 +28,21 @@
       <h2>Nos Services</h2>
         <p>Créez l'extraordinaire avec Innotech : web, apps, sécurité - l'innovation à portée de clic</p>
         <div class="slider">
-            <a href="#" style="text-decoration: none;">
+            <a href="{{route('Webdev')}}" style="text-decoration: none;">
             <div class="slide1">
             <div>
                 <img src="{{ asset('assets/images/deweb.jpg') }}"></div>
                 <div><p style="font-family: Rund Display;">Dev Web &nbsp;<i class="fa-solid fa-arrow-right"></i></p></div>
             </div>
             </a>
-            <a href="#" style="text-decoration: none;">
+            <a href="{{route('Securite')}}" style="text-decoration: none;">
             <div class="slide2">
                 
                 <img src="{{ asset('assets/images/securite.jpg') }}">
                 <p style="font-family: Rund Display;">CyberSecurity &nbsp;<i class="fa-solid fa-arrow-right"></i></p>
             </div>
             </a>
-            <a href="#" style="text-decoration: none;">
+            <a href="{{route('Appdev')}}" style="text-decoration: none;">
             <div class="slide3">
                 
                 <img src="{{ asset('assets/images/devapp.jpg') }}">
