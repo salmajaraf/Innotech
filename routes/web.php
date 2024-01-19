@@ -16,7 +16,7 @@ Route::get('/signin', function () {
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dash/dashHome');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/Home2', function () {
@@ -30,6 +30,10 @@ Route::get('/app', function () {
     return view('Appdev');
 })->middleware(['auth', 'verified'])->name('Appdev');
 
+Route::get('/Profile', function () {
+    return view('Profile');
+
+})->middleware(['auth', 'verified'])->name('Profile');;
 Route::get('user', [ContactController::class,'show']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

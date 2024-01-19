@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div  class="imgpack"  style="padding-left: 120px;">
-                    <img src="{{ asset('assets/images/app2.jpg') }}" alt="pack.png" class="rightborder">
+                    <img src="{{ asset('assets/images/app2.jpg') }}" alt="pack.png" class="leftborder" >
                 </div>
             </div>
 

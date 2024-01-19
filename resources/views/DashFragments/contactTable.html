@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>clienys</title>
+</head>
+<body>
+<div class="container-fluid" style=" padding-top: 8%;" th:fragment="clienys">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Gestion des Messages de Contact</h1>
+    <p class="mb-4">Consultez les messages envoyés par les utilisateurs et les clients dans la section de contact. Gérez facilement les communications et répondez aux demandes en utilisant cette fonctionnalité dédiée.</p>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-1 font-weight-bold text-center" style="color: #201F25">Contacts</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive" th:if="${contacts != null}">
+                    <div class="row"><div class="col-sm-12">
+                        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" >Nom</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" >Prénom</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" > Email</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Message</th>
+                    </thead>
+                    <tbody>
+                    <tr class="odd" th:each="contact : ${contacts}">
+                        <td class="sorting_1" th:if="${contact != null}" th:text="${contact.getNom()}"></td>
+                        <td th:text="${contact.getPrenom()}"></td>
+                        <td th:text="${contact.getEmail()}"></td>
+                        <td th:text="${contact.getMessage()}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -2,22 +2,21 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
     
-    <div class="flex items-center justify-center h-screen">
-        <form method="POST" action="{{ route('login') }}" class="w-full max-w-md p-6 bg-white rounded-md shadow-md">
+    <form method="POST" action="{{ route('login') }}" >
             @csrf
 
             <!-- Email Address -->
             <div>
                 <x-input-label  for="email" :value="__('Adresse-Mail')" />
-                <x-text-input style="margin-left: 10px;" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                <x-text-input style="margin-left: 10px; border-radius:10px;" id="email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
+            <div >
                 <x-input-label for="password" :value="__('Mot de Passe')" />
 
-                <x-text-input id="password" class="block mt-1 w-full"
+                <x-text-input id="password"
                                 type="password"
                                 name="password"
                                 required autocomplete="current-password" />
@@ -33,9 +32,9 @@
                 </x-input-label>
             </div>
 
-            <div class="flex items-center justify-between mt-4" style="margin-top:25px;">
-                <div class="btn-signin">
-                    <a href="{{route('register')}}">
+            <div  style="margin-top:25px;">
+                <div class="btn-signin" >
+                    <a href="/register">
                         S'inscrire
                     </a>
                 </div>
@@ -46,5 +45,4 @@
                 </div>
             </div>
         </form>
-    </div>
 </x-guest-layout>

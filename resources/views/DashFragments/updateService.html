@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>clienys</title>
+</head>
+<body>
+<div class="container-fluid" style=" padding-top: 8%;" th:fragment="clienys">
+    <!-- Page Heading -->
+    <p class="mb-1" style="visibility: hidden">DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-1 font-weight-bold text-center" style="color: #201F25">Modifier un Client</h6>
+        </div>
+        <div class="card-body">
+            <form class="forms-sample" th:action="@{/updateFormService}" method="post" th:object="${updateFormService}">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-3 col-form-label">Nom :</label>
+                    <div class="col-sm-9">
+                        <input type="hidden" name="id_service" th:value="${serviceModif.get().getId_service()}" />
+                        <input type="text" class="form-control" name="name" id="name" required th:value="${serviceModif.get().getNom()}"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-sm-3 col-form-label">description :</label>
+                    <div class="col-sm-9">
+                        <textarea type="text" name="description" class="form-control"  id="description" th:text="${serviceModif.get().getDescription()}"></textarea>
+                    </div>
+                </div>
+                <div style="position: relative; left: 80%">
+                    <button type="submit" class="btn me-2 modifCl"  >modifier</button>
+                    <a class="btn btn-light" th:href="@{/dashService}">annuler</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

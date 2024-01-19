@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>clienys</title>
+</head>
+<body>
+<div class="container-fluid" style=" padding-top: 8%;" th:fragment="clienys">
+  <!-- Page Heading -->
+  <p class="mb-1" style="visibility: hidden">DataTables is a third party plugin that is used to generate the demo table below.
+    For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-1 font-weight-bold text-center" style="color: #201F25">Modifier un Client</h6>
+    </div>
+    <div class="card-body">
+      <form class="forms-sample" th:action="@{/addFormEmp}" method="post" th:object="${addFormEmp}">
+        <div class="form-group row">
+          <label for="name" class="col-sm-3 col-form-label">Nom :</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="name" id="name" required placeholder="entrez un nom"/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="prenom" class="col-sm-3 col-form-label">Prénom :</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="prenom" id="prenom"  placeholder="entrez un preom"/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="numero" class="col-sm-3 col-form-label">Numéro de Telephone :</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="numero" id="numero" required placeholder="entrez un numero de telephone" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="ville" class="col-sm-3 col-form-label">Ville :</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="ville" id="ville"  required placeholder="entrez une ville"/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="service" class="col-sm-3 col-form-label">Service :</label>
+          <div class="col-sm-9">
+            <select id="service" name="service" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+              <option value="1">Peinture</option>
+              <option value="2">Plomberie</option>
+              <option value="3">Revêtement</option>
+            </select>
+          </div>
+        </div>
+        <div style="position: relative; left: 80%">
+          <button type="submit" class="btn me-2 modifCl"  >Ajouter</button>
+          <a class="btn btn-light" th:href="@{/dashEmployeur}">Annuler</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

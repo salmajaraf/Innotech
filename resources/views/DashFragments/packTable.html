@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>clienys</title>
+</head>
+<body>
+<div class="container-fluid" style=" padding-top: 8%;" th:fragment="clienys">
+    <h1 class="h3 mb-2 text-gray-800">Gestion des Packs</h1>
+    <p class="mb-4">Consultez  facilement les détails des différents packs proposés, y compris les fonctionnalités, les prix et d'autres informations importantes.</p>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-1 font-weight-bold text-center" style="color: #201F25">Packs</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive" th:if="${packs != null}">
+                <div class="row">
+                    <div class="col-sm-12">
+                    <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" >Nom de Piece</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" >Prix</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Description</th>
+                    </thead>
+                    <tbody>
+                    <tr class="odd" th:each="pack : ${packs}">
+                        <td class="sorting_1" th:if="${pack != null}" th:text="${pack.getPiece()}"></td>
+                        <td th:text="${pack.getPrix()}"></td>
+                        <td th:text="${pack.getDescription()}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
