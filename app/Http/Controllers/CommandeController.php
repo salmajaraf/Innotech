@@ -70,8 +70,8 @@ class CommandeController extends Controller
     public function deleteCommande(Request $request)
     {
         $idcomm = $request->commparam;
-        $user = User::find($idcomm);
-        $user->delete();
+        $commande = Commande::find($idcomm);
+        $commande->delete();
         return redirect()->route('dashcommande');
 
     }
