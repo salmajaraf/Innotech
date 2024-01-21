@@ -29,6 +29,9 @@ class TemplateController extends Controller
 
     }
 
+
+
+
     public function updateTemplate(Request $request)
     {
         $idtemp = $request->idtemp;
