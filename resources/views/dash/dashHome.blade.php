@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ asset('css/sb-admin-2.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/sb-admin-2-min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/general.css') }}" />
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @if(env('APP_ENV') === 'production')

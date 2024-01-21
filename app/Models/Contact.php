@@ -11,6 +11,7 @@ use function Laravel\Prompts\table;
 class Contact extends Model
 {
     use HasFactory;
+
     protected $table = 'avis';
     protected $fillable = ['email','nom', 'prenom', 'message'];
 
