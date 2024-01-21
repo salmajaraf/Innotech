@@ -11,6 +11,9 @@ use function Laravel\Prompts\table;
 class Contact extends Model
 {
     use HasFactory;
+  
+
+    protected $table = 'avis';
 
    public function addContact($data){
     $result = DB::table('avis')->insert($data);

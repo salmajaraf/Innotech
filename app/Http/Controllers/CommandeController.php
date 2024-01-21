@@ -42,6 +42,7 @@ class CommandeController extends Controller
         ]);
 
     }
+  
 
 
     public function getAllClients()

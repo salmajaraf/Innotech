@@ -14,11 +14,11 @@ Route::get('/', function () {
 Route::get('/signin', function () {
     return view('/auth/login');
 });
+use App\Http\Controllers\DashboardController;
 
 
-Route::get('/dashboard', function () {
-    return view('dash/dashHome');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->middleware(['auth', 'verified'])->name('dash/dashHome');
+
 
 Route::get('/dashclient', [CommandeController::class, 'getAllClients'])->middleware(['auth', 'verified'])->name('dashclient');
 Route::get('/updateclient', [CommandeController::class, 'updatepage'])->middleware(['auth', 'verified'])->name('updateclient');

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="{{ asset('css/packpage.css') }}" />
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<div class="container-fluid" style="padding-top: 8%; min-height: auto ;" th:fragment="body">
+<div class="container-fluid" style="padding-top: 8%; min-height: auto ;" >
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -26,12 +27,10 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Nombres de clients </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800" th:text="${nbrclients}"></div>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                        </div>
+                                Nombres de clients  </div>
+                                <div class="h5 mb-0 font-weight-bold " style="color:#011017">{{$numberOfClients }}</div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
@@ -45,11 +44,9 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Nombre de commandes</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800" th:text="${nbrcommandes}"></div>
+                            <div class="h5 mb-0 font-weight-bold " style="color:#011017" >{{ $numberOfOrders }}</div>
                         </div>
-                        <div class="col-auto">
-                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -61,18 +58,16 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Nombre des employeurs
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Nombre des templates
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" th:text="${nbremployes}"></div>
+                                    <div class="h5 mb-0 mr-3 font-weight-bold " style="color:#011017" >{{ $numberOfTemplates}}</div>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -86,11 +81,9 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Boite de contacts</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"th:text="${nbrcontacts}"></div>
+                            <div class="h5 mb-0 font-weight-bold " style="color:#011017">{{ $numberOfComments}}</div>
                         </div>
-                        <div class="col-auto">
-                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
