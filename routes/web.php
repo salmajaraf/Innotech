@@ -13,11 +13,11 @@ Route::get('/', function () {
 Route::get('/signin', function () {
     return view('/auth/login');
 });
+use App\Http\Controllers\DashboardController;
 
 
-Route::get('/dashboard', function () {
-    return view('dash/dashHome');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->middleware(['auth', 'verified'])->name('dash/dashHome');
+
 
 Route::get('/Home2', function () {
     return view('Home2');

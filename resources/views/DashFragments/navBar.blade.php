@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<nav style="position: fixed; z-index: 100; width: 72%;" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" th:fragment="navBar">
+<nav style="position: fixed; z-index: 100; width: 80%;" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" th:fragment="navBar">
     <!-- Sidebar Toggle (Topbar) -->
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
       <i class="fa fa-bars"></i>
@@ -15,7 +15,7 @@
     <div
             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
       <div class="input-group">
-        <h1 style="font-family:'Rund Display', sans-serif;color:#201F25;font-size: 22px">Welcome to InnoTech</h1>
+        <h1 style="font-family:'Rund Display', sans-serif;color:#011017;font-size: 22px">Welcome to InnoTech</h1>
       </div>
     </div>
 
@@ -55,10 +55,12 @@
 
       <!-- Nav Item - User Information -->
       <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" th:href="@{/updateAdmin}" id="userDropdown" role="button"
+        <a class="nav-link dropdown-toggle" href="@{/updateAdmin}" id="userDropdown" role="button"
            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="mr-2 d-none d-lg-inline text-gray-600 small" th:text="${userNameDash}">Douglas McGee</span>
-          <i class="fa-solid fa-user" style="color: black;scale: 1.5;margin-left: 20px"></i>
+          <span class="mr-2 d-none d-lg-inline text-gray-600 small" text="${userNameDash}">Admin</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>
         </a>
         <!-- Dropdown - User Information -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
