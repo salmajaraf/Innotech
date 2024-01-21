@@ -18,6 +18,14 @@ class ContactController extends Controller
         ]);
 
     }
+    public function deleteContacts(Request $request)
+    {
+        $idcont= $request->avisparam;
+        DB::table('avis')->where('email', $idcont)->delete();        
+        return redirect()->route('dashcontact');
+
+    }
+
 
 
     public function addavis(Request $request){

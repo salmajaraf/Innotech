@@ -11,6 +11,15 @@ use Illuminate\Support\Facades\Auth;
 
 class CommandeController extends Controller
 {
+    public function getAllCommandes()
+    {
+
+        $donComm = DB::table('commandes')->get();
+        return view('dash/dashCommande', [
+            'donComm' => $donComm,
+        ]);
+
+    }
     public function insertCommande(Request $request)
     {
         $iduser = User::where('email', Auth::user()->email)->value('id');
@@ -58,7 +67,14 @@ class CommandeController extends Controller
 
     }
 
+    public function deleteCommande(Request $request)
+    {
+        $idcomm = $request->commparam;
+        $user = User::find($idcomm);
+        $user->delete();
+        return redirect()->route('dashcommande');
 
+    }
     public function deleteClient(Request $request)
     {
         $iduser = $request->usernameparam;

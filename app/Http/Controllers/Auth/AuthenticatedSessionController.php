@@ -29,6 +29,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        if (Auth::user()->email === 'admin@gmail.com') {
+            return redirect('/dashboard'); // Remplacez 'dashboard' par le nom de votre route de tableau de bord
+        }
+
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -38,10 +42,12 @@ class AuthenticatedSessionController extends Controller
     public function destroy(Request $request): RedirectResponse
     {
         Auth::guard('web')->logout();
+        
 
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
+        
 
         return redirect('/');
     }

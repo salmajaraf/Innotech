@@ -9,7 +9,7 @@ class Commande extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['iduser', 'date_rendezvous', 'heure_rendezvous'];
+    protected $fillable = ['id','iduser', 'date_rendezvous', 'heure_rendezvous'];
 
     public function templates()
     {

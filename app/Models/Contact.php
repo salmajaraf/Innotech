@@ -13,7 +13,7 @@ class Contact extends Model
     use HasFactory;
 
     protected $table = 'avis';
-    protected $fillable = ['email','nom', 'prenom', 'message'];
+    protected $fillable = ['id','email','nom', 'prenom', 'message'];
 
    public function addContact($data){
     $result = DB::table('avis')->insert($data);
