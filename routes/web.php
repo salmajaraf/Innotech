@@ -5,6 +5,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SocieteController;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\DashboardController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,9 +18,8 @@ Route::get('/signin', function () {
 });
 
 
-Route::get('/dashboard', function () {
-    return view('dash/dashHome');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->middleware(['auth', 'verified'])->name('dash/dashboard');
+Route::get('/dashcontact', [ContactController::class, 'getAllContacts'])->middleware(['auth', 'verified'])->name('dashcontact');
 
 Route::get('/dashclient', [CommandeController::class, 'getAllClients'])->middleware(['auth', 'verified'])->name('dashclient');
 Route::get('/updateclient', [CommandeController::class, 'updatepage'])->middleware(['auth', 'verified'])->name('updateclient');

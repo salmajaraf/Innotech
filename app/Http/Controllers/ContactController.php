@@ -4,11 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class ContactController extends Controller
 {
-    public function show(){
-        return "hi jjjjj";
+    public function getAllContacts()
+    {
+
+        $donCont = DB::table('avis')->get();
+        return view('dash/dashContacts', [
+            'donCont' => $donCont,
+        ]);
+
     }
 
 
