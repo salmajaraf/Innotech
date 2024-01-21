@@ -20,7 +20,7 @@
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle Mobile App 1 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Explorez l'élégance fonctionnelle avec ce modèle d'application mobile. Une interface intuitive et des fonctionnalités avancées créent une expérience utilisateur exceptionnelle.</p>
                         <p><strong>Langages :</strong> Swift</p>
                     </div>
                     <div class="cont101">                
@@ -38,7 +38,7 @@
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle Mobile App 2 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Découvrez l'innovation mobile avec ce modèle captivant. Des designs dynamiques et une navigation fluide offrent une expérience utilisateur moderne et engageante.</p>
                         <p><strong>Langages :</strong> Kotlin</p>
                     </div>
                     <div class="cont101">                
@@ -60,7 +60,7 @@
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle Mobile App 3 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Plongez dans le futur de l'application mobile avec ce modèle révolutionnaire. Des fonctionnalités avancées et une esthétique élégante en font un choix incontournable.</p>
                         <p><strong>Langages :</strong> React Native</p>
                     </div>
                     <div class="cont101">                
@@ -76,7 +76,7 @@
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle Mobile App 4 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Expérimentez l'élégance haut de gamme avec ce modèle d'application mobile. Une combinaison de design moderne et de performances exceptionnelles pour une expérience utilisateur sans compromis.</p>
                         <p><strong>Langages :</strong> Flutter</p>
                     </div>
                     <div class="cont101">                

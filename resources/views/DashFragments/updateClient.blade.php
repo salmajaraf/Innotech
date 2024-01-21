@@ -16,35 +16,28 @@
             <h6 class="m-1 font-weight-bold text-center" style="color: #201F25">Modifier un Client</h6>
         </div>
         <div class="card-body">
-            <form class="forms-sample" th:action="@{/updateFormUser}" method="post" th:object="${updateFormUser}">
+            <form class="forms-sample" action="{{route('updateFormUser')}}" method="post">
                 <div class="form-group row">
-                    <label for="name" class="col-sm-3 col-form-label">Nom :</label>
+                    <label for="iduser" class="col-sm-3 col-form-label">Id User :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" name="name" id="name" required th:value="${userModif.get().getName()}"/>
+                        <input type="text" class="form-control" name="iduser" id="iduser" readonly value="{{ $userpro->id }}"/>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="username" class="col-sm-3 col-form-label">Nom d'Utilisateur :</label>
+                    <label for="name" class="col-sm-3 col-form-label">Nom :</label>
                     <div class="col-sm-9">
-                        <input type="hidden" name="usernamechamp" th:value="${userModif.get().getUsername()}" />
-                        <input type="text" class="form-control" id="username" disabled th:value="${userModif.get().getUsername()}"/>
+                        <input type="text" class="form-control" name="name" id="name" required value="{{ $userpro->name }}"/>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="email" class="col-sm-3 col-form-label">Email :</label>
                     <div class="col-sm-9">
-                        <input type="email" class="form-control" name="email" id="email" required th:value="${userModif.get().getEmail()}"/>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="phone" class="col-sm-3 col-form-label">Numero de Telephone :</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile number" required th:value="${userModif.get().getPhone()}"/>
+                        <input type="email" class="form-control" name="email" id="email" readonly value="{{ $userpro->email }}"/>
                     </div>
                 </div>
                 <div style="position: relative; left: 80%">
                     <button type="submit" class="btn me-2 modifCl"  >Modifier</button>
-                    <a class="btn btn-light" th:href="@{/dashClient}">Annuler</a>
+                    <a class="btn btn-light" href="{{route('dashclient')}}">Annuler</a>
                 </div>
             </form>
 

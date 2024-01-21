@@ -18,10 +18,10 @@ let panier = [];
     const addPanier = (nbpack)=>{
         let pack;
         let packs = [
-            {"id": 5, "nom": "Modèle Mobile App 1", "lien": "assets/images/app1.jpg","prix": 3000,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis."},
-            {"id": 6, "nom": "Modèle Mobile App 2", "lien": "assets/images/app2.jpg","prix": 3500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis."},
-            {"id": 7, "nom": "Modèle Mobile App 3", "lien": "assets/images/app3.jpg","prix": 4000,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis."},
-            {"id": 8, "nom": "Modèle Mobile App 4", "lien": "assets/images/app4.jpg","prix": 4500,"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis."}
+            {"id": 5, "nom": "Modèle Mobile App 1", "lien": "assets/images/app1.jpg","prix": 3000,"description": "Explorez l'élégance fonctionnelle avec ce modèle d'application mobile. Une interface intuitive et des fonctionnalités avancées créent une expérience utilisateur exceptionnelle."},
+            {"id": 6, "nom": "Modèle Mobile App 2", "lien": "assets/images/app2.jpg","prix": 3500,"description": "Découvrez l'innovation mobile avec ce modèle captivant. Des designs dynamiques et une navigation fluide offrent une expérience utilisateur moderne et engageante."},
+            {"id": 7, "nom": "Modèle Mobile App 3", "lien": "assets/images/app3.jpg","prix": 4000,"description": "Plongez dans le futur de l'application mobile avec ce modèle révolutionnaire. Des fonctionnalités avancées et une esthétique élégante en font un choix incontournable."},
+            {"id": 8, "nom": "Modèle Mobile App 4", "lien": "assets/images/app4.jpg","prix": 4500,"description": "Expérimentez l'élégance haut de gamme avec ce modèle d'application mobile. Une combinaison de design moderne et de performances exceptionnelles pour une expérience utilisateur sans compromis."}
         ];
         let valid = check(nbpack);
         if(valid){

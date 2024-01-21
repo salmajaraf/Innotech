@@ -4,6 +4,7 @@ use App\Http\Controllers\CommandeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SocieteController;
+use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,6 +19,15 @@ Route::get('/signin', function () {
 Route::get('/dashboard', function () {
     return view('dash/dashHome');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashclient', [CommandeController::class, 'getAllClients'])->middleware(['auth', 'verified'])->name('dashclient');
+Route::get('/updateclient', [CommandeController::class, 'updatepage'])->middleware(['auth', 'verified'])->name('updateclient');
+Route::post('/updateclientdon', [CommandeController::class, 'updateclientdon'])->middleware(['auth', 'verified'])->name('updateFormUser');
+Route::post('/suppuser', [CommandeController::class, 'deleteClient'])->middleware(['auth', 'verified'])->name('suppUser');
+
+Route::get('/dashtemplates', [TemplateController::class, 'getAllTemplates'])->middleware(['auth', 'verified'])->name('dashtemplates');
+Route::get('/updatetemp', [TemplateController::class, 'updatetemppage'])->middleware(['auth', 'verified'])->name('updatetemp');
+Route::post('/updateTemplate', [TemplateController::class, 'updateTemplate'])->middleware(['auth', 'verified'])->name('updateTemplate');
 
 Route::get('/Home2', function () {
     return view('Home2');

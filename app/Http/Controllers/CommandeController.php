@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Commande;
+use Illuminate\Support\Facades\DB;
 use App\Models\Templates;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -39,6 +40,55 @@ class CommandeController extends Controller
         return view('panier', [
             'userinfo' => $request->user(),
         ]);
+
+    }
+
+
+    public function getAllClients()
+    {
+        $donclients = DB::table('users')
+        ->leftJoin('commandes', 'users.id', '=', 'commandes.iduser')
+        ->select('users.*', DB::raw('count(commandes.id) as nombre_commandes'))
+        ->groupBy('users.id')
+        ->get();
+        return view('dash/dashClient', [
+            'donclients' => $donclients,
+        ]);
+
+    }
+
+
+    public function deleteClient(Request $request)
+    {
+        $iduser = $request->usernameparam;
+        $user = User::find($iduser);
+        $user->delete();
+        return redirect()->route('dashclient');
+
+    }
+
+
+    public function updatepage(Request $request)
+    {
+        $iduser = $request->userparam;
+        $user = User::find($iduser);
+        return view('dash/dashUpdateClient', [
+            'userpro' => $user,
+        ]);
+
+    }
+    public function updateclientdon(Request $request)
+    {
+        $iduser = $request->iduser;
+        $user = User::find($iduser);
+        if ($user) {
+            $nouveauNom = $request->name;
+    
+            $user->name = $nouveauNom;
+            $user->save();
+    
+            return redirect()->route('dashclient');
+        }
 
     }
 }

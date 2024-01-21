@@ -20,7 +20,7 @@
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle 1 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Un design élégant et moderne, parfait pour ceux qui recherchent une esthétique raffinée. Avec des détails soigneusement conçus, ce modèle offre une expérience visuelle captivante.</p>
                         <p><strong>Langages :</strong> Vue.js - Python (Django) - PostgreSQL - TypeScript</p>
                     </div>
                     <div class="cont101">                
@@ -38,7 +38,7 @@
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle 2 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Une fusion harmonieuse de simplicité et d'innovation. Ce modèle présente des lignes épurées et des éléments visuels uniques, créant une atmosphère distincte et contemporaine.</p>
                         <p><strong>Langages :</strong> Angular - Java - MySQL - Kotlin</p>
                     </div>
                     <div class="cont101">                
@@ -60,7 +60,7 @@
                 <div class="description25" style="padding-left: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle 3 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Une conception exceptionnelle qui marie fonctionnalité et style. Explorez la modernité avec ce modèle qui offre des fonctionnalités avancées tout en captivant l'œil par son esthétique sophistiquée.</p>
                         <p><strong>Langages :</strong> React - Express.js - MongoDB - Js</p>
                     </div>
                     <div class="cont101">                
@@ -76,7 +76,7 @@
                 <div class="description25" style="padding-right: 45px;">
                     <div class="cont100">
                         <h2 class="h2modele">Modèle 4 :</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper justo. Suspendisse potenti. Nulla facilisi. Integer ut dolor a dui venenatis posuere ac vel justo. Vestibulum facilisis, tortor nec luctus hendrerit, libero justo tempus velit, vel luctus felis eros vel odio.</p>
+                        <p>Une expérience visuelle immersive vous attend avec ce modèle unique. Son design avant-gardiste crée une atmosphère distinctive, faisant de ce choix une option parfaite pour ceux qui recherchent l'originalité.</p>
                         <p><strong>Langages :</strong> Angular - Express.js - MongoDB - Js</p>
                     </div>
                     <div class="cont101">                
