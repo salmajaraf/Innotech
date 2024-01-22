@@ -10,5 +10,5 @@ class Societe extends Model
     use HasFactory;
 
     protected $table = 'societe'; 
-    protected $fillable = ['nomsoc', 'adressesoc', 'telseoc']; 
+    protected $fillable = ['nomsoc', 'adressesoc', 'telsoc']; 
 }

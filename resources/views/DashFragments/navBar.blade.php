@@ -55,13 +55,15 @@
 
       <!-- Nav Item - User Information -->
       <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="@{/updateAdmin}" id="userDropdown" role="button"
-           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="mr-2 d-none d-lg-inline text-gray-600 small" text="${userNameDash}">Admin</span>
+        <form action="{{route('updateAdmin')}}" method="get">
+          <input type="hidden" value="{{ request()->user()->email }}" name="idadmin">
+        <button class="nav-link dropdown-toggle" style="background: transparent; border:none; outline:none;">
+          <span class="mr-2 d-none d-lg-inline text-gray-600 small" text="${userNameDash}">{{request()->user()->name}}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
           </svg>
-        </a>
+        </button>
+        </form>
         <!-- Dropdown - User Information -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
              aria-labelledby="userDropdown">

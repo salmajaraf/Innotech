@@ -18,7 +18,7 @@ class TemplateController extends Controller
 
     }
 
-
+ 
     public function updatetemppage(Request $request)
     {
         $idtemplate = $request->tempid;

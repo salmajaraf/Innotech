@@ -108,4 +108,32 @@ class CommandeController extends Controller
         }
 
     }
+
+
+    public function updateAdminPage(Request $request)
+    {
+        $email = $request->idadmin;
+        $user = User::where('email', $email)->first();
+        if ($user) {
+            return view('dash/dashUpdateAdmin', [
+                'adminpro' => $user,
+            ]);
+        }
+
+    }
+
+    public function updateAdminProfile(Request $request)
+    {
+        $iduser = $request->idadmin;
+        $user = User::find($iduser);
+        if ($user) {
+            $nouveauNom = $request->name;
+    
+            $user->name = $nouveauNom;
+            $user->save();
+    
+            return redirect()->route('dash/dashboard');
+        }
+
+    }
 }

@@ -34,6 +34,15 @@ Route::get('/dashtemplates', [TemplateController::class, 'getAllTemplates'])->mi
 Route::get('/updatetemp', [TemplateController::class, 'updatetemppage'])->middleware(['auth', 'verified'])->name('updatetemp');
 Route::post('/updateTemplate', [TemplateController::class, 'updateTemplate'])->middleware(['auth', 'verified'])->name('updateTemplate');
 
+
+Route::get('/dashsociete', [SocieteController::class, 'getAllSoc'])->middleware(['auth', 'verified'])->name('dashsociete');
+Route::get('/updatesoc', [SocieteController::class, 'infoSocPage'])->middleware(['auth', 'verified'])->name('updatesoc');
+Route::post('/updateFormSoc', [SocieteController::class, 'updateSoc'])->middleware(['auth', 'verified'])->name('updateFormSoc');
+Route::post('/suppsoc', [SocieteController::class, 'supSoc'])->middleware(['auth', 'verified'])->name('suppsoc');
+
+Route::get('/updateAdmin', [CommandeController::class, 'updateAdminPage'])->middleware(['auth', 'verified'])->name('updateAdmin');
+Route::post('/updateFormAdmin', [CommandeController::class, 'updateAdminProfile'])->middleware(['auth', 'verified'])->name('updateFormAdmin');
+
 Route::get('/Home2', function () {
     return view('Home2');
 })->middleware(['auth', 'verified'])->name('Home2');
